@@ -16,9 +16,18 @@ Middlemans read the buffer A, insert number in A to buffer B, remove number in A
 Consumers remove the number in buffer B. <br/>
 
 
-### outputs
+### Outputs
+Creating producer thread with id 123145393582080  
+Creating producer thread with id 123145394118656  
+Creating producer thread with id 123145394655232  
+Producer thread 123145393582080 sleeping for 2 seconds  
+...  
 A[13][18][0][0][0], in = 2, out = 0 queue = Producer <br/>
 A[0][18][0][0][0], in = 2, out = 1 queue = Middleman <br/>
 B[13][0][0][0][0], in = 1, out = 0 queue = Middleman <br/>
 B[0][0][0][0][0], in = 1, out = 1 queue = Consumer <br/>
+...  
+Middleman thread 123145396264960 inserted value 0  
+Main thread exiting.  
+total in = 98, total out = 96  
 where in, out are the pointer for the index of buffer. <br/>
