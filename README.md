@@ -10,15 +10,15 @@ int *A = (int*) malloc(size);
 int *B = (int*) malloc(size);
 ```
 
-Threads has attributes as below.
-Producers insert function to buffer A.
-Middlemans read the buffer A, insert number in A to buffer B, remove number in A.
-Consumers remove the number in buffer B.
+Threads has attributes as below. <br/>
+Producers insert function to buffer A. <br/>
+Middlemans read the buffer A, insert number in A to buffer B, remove number in A. <br/>
+Consumers remove the number in buffer B. <br/>
 
 
 ### outputs
-A[13][18][0][0][0], in = 2, out = 0 queue = Producer
-A[0][18][0][0][0], in = 2, out = 1 queue = Middleman
-B[13][0][0][0][0], in = 1, out = 0 queue = Middleman
-B[0][0][0][0][0], in = 1, out = 1 queue = Consumer
-where in, out are the pointer for the index of buffer.
+A[13][18][0][0][0], in = 2, out = 0 queue = Producer <br/>
+A[0][18][0][0][0], in = 2, out = 1 queue = Middleman <br/>
+B[13][0][0][0][0], in = 1, out = 0 queue = Middleman <br/>
+B[0][0][0][0][0], in = 1, out = 1 queue = Consumer <br/>
+where in, out are the pointer for the index of buffer. <br/>
